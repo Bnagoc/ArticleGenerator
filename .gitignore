@@ -22,6 +22,9 @@ bld/
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
+appsettings.json
+appsettings.Development.json
+secrets.json
 
 # .NET Core
 project.lock.json
