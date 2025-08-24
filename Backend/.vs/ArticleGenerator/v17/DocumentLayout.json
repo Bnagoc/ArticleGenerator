@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\prod\\ArticleGeneratorApp\\Backend\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4EE4D5E3-42C7-4890-9C23-B4AACBD45A05}|ArticleGenerator.csproj|e:\\prod\\articlegeneratorapp\\backend\\products\\endpoints\\getproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EE4D5E3-42C7-4890-9C23-B4AACBD45A05}|ArticleGenerator.csproj|solutionrelative:products\\endpoints\\getproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EE4D5E3-42C7-4890-9C23-B4AACBD45A05}|ArticleGenerator.csproj|e:\\prod\\articlegeneratorapp\\backend\\configureservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EE4D5E3-42C7-4890-9C23-B4AACBD45A05}|ArticleGenerator.csproj|solutionrelative:configureservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EE4D5E3-42C7-4890-9C23-B4AACBD45A05}|ArticleGenerator.csproj|e:\\prod\\articlegeneratorapp\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4EE4D5E3-42C7-4890-9C23-B4AACBD45A05}|ArticleGenerator.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EE4D5E3-42C7-4890-9C23-B4AACBD45A05}|ArticleGenerator.csproj|e:\\prod\\articlegeneratorapp\\backend\\configureapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EE4D5E3-42C7-4890-9C23-B4AACBD45A05}|ArticleGenerator.csproj|solutionrelative:configureapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +26,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GetProducts.cs",
+              "DocumentMoniker": "E:\\prod\\ArticleGeneratorApp\\Backend\\Products\\Endpoints\\GetProducts.cs",
+              "RelativeDocumentMoniker": "Products\\Endpoints\\GetProducts.cs",
+              "ToolTip": "E:\\prod\\ArticleGeneratorApp\\Backend\\Products\\Endpoints\\GetProducts.cs",
+              "RelativeToolTip": "Products\\Endpoints\\GetProducts.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwA4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T18:33:56.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\prod\\ArticleGeneratorApp\\Backend\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "E:\\prod\\ArticleGeneratorApp\\Backend\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-24T15:19:08.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConfigureServices.cs",
+              "DocumentMoniker": "E:\\prod\\ArticleGeneratorApp\\Backend\\ConfigureServices.cs",
+              "RelativeDocumentMoniker": "ConfigureServices.cs",
+              "ToolTip": "E:\\prod\\ArticleGeneratorApp\\Backend\\ConfigureServices.cs",
+              "RelativeToolTip": "ConfigureServices.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T14:55:37.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ConfigureApp.cs",
+              "DocumentMoniker": "E:\\prod\\ArticleGeneratorApp\\Backend\\ConfigureApp.cs",
+              "RelativeDocumentMoniker": "ConfigureApp.cs",
+              "ToolTip": "E:\\prod\\ArticleGeneratorApp\\Backend\\ConfigureApp.cs",
+              "RelativeToolTip": "ConfigureApp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T14:55:35.183Z"
             }
           ]
         }

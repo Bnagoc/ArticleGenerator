@@ -58,7 +58,7 @@
 
             string nextLink = page < totalPages ? $"<a href='/products?page={page + 1}' style='{ButtonStyle}'>Следующая »</a>" : "<span style='color: #aaa;'>Следующая »</span>";
 
-            string pageInfo = $"Страница {page} из {totalPages} &nbsp; (500/{totalCount} товаров)";
+            string pageInfo = $"Страница {page} из {totalPages} &nbsp; ({products.Count}/{totalCount} товаров)";
 
             return Results.Content($@"
                 <!DOCTYPE html>
