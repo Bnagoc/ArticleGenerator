@@ -210,7 +210,7 @@
                             <table>
                                 <thead>
                                     <tr>
-                                        <th>№</th>
+                                        <th>ID</th>
                                         <th>Наименование</th>
                                         <th>Модель</th>
                                         <th>Бренд</th>
@@ -232,39 +232,49 @@
                         </div>
                     </div>
 
-                <script>
+               <script>
                     document.addEventListener('DOMContentLoaded', function () {{
                         const searchInput = document.getElementById('searchInput');
-                        const tableRows = document.querySelectorAll('tbody tr');
+                        const tableRows = Array.from(document.querySelectorAll('tbody tr')); // Преобразуем в массив
+                        let noResultsRow = document.getElementById('no-results');
+
+                        // Если строки ""Ничего не найдено"" ещё нет — создаём
+                        if (!noResultsRow) {{
+                            noResultsRow = document.createElement('tr');
+                            noResultsRow.id = 'no-results';
+                            noResultsRow.innerHTML = `
+                                <td colspan=""7"" style=""color: #999; text-align: center; font-style: italic;"">
+                                    Ничего не найдено
+                                </td>
+                            `;
+                            document.querySelector('tbody').appendChild(noResultsRow);
+                            noResultsRow.style.display = 'none'; // Сначала скрыта
+                        }}
 
                         searchInput.focus();
 
                         searchInput.addEventListener('input', function () {{
                             const searchTerm = searchInput.value.trim().toLowerCase();
+                            let visibleRows = 0;
 
                             tableRows.forEach(row => {{
+                                // Пропускаем строку ""Ничего не найдено""
+                                if (row === noResultsRow) return;
+
+                                // Берём нужные ячейки: Наименование, Модель, Бренд, Код ТН ВЭД, Артикул
                                 const cells = [row.cells[1], row.cells[2], row.cells[3], row.cells[4], row.cells[5]];
-                                const text = cells.map(c => c.textContent).join(' ').toLowerCase();
+                                const text = cells.map(c => c ? c.textContent : '').join(' ').toLowerCase();
 
                                 if (searchTerm === '' || text.includes(searchTerm)) {{
                                     row.style.display = '';
+                                    visibleRows++;
                                 }} else {{
                                     row.style.display = 'none';
                                 }}
                             }});
-                            let noResults = document.getElementById('no-results');
-                                if (!noResults) {{
-                                    noResults = document.createElement('tr');
-                                    noResults.id = 'no-results';
-                                    noResults.innerHTML = `
-                                        <td colspan=""7"" style=""color: #999; text-align: center; font-style: italic;"">
-                                            Ничего не найдено
-                                        </td>
-                                    `;
-                                    document.querySelector('tbody').appendChild(noResults);
-                                }}
 
-                            noResults.style.display = (visibleRows === 0 && searchTerm !== '') ? '' : 'none';
+                            // Показываем/скрываем сообщение ""Ничего не найдено""
+                            noResultsRow.style.display = (searchTerm !== '' && visibleRows === 0) ? '' : 'none';
                         }});
                     }});
                 </script>

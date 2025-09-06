@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZO54/t7/S0ujSy4FjYyILwAAAAACAAAAAAAQZgAAAAEAACAAAAApwP9iwjGNsmrRtasD3vYYtDRVZSVMZzfxKC1wHyauQgAAAAAOgAAAAAIAACAAAAC60K6V+aNz/+KCq+8y2u2xqpLemtALRbohKRdwpHVq7SAAAABxkt2Xrafm5sJ36DXAx1CRv/wHQil3WelbZbjyJudoPkAAAACCEORIplmUYfmvOM9oI8iiAaLFballNft4DEfMgOaHX4JYfO21QMLHZkO2o5Fk/KQ84pcXsuORDe56N413s7eq</EncryptedPassword>
+    <History>True|2025-08-27T19:13:18.6428702Z||;True|2025-08-27T22:07:10.7483123+03:00||;True|2025-08-24T22:33:45.6043212+03:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="Default">
+      <Value>Server=db25992.databaseasp.net%3b Database=db25992%3b User Id=db25992%3b Password=6z%3fJ%40Do5Zn4_%3b Encrypt=False%3b MultipleActiveResultSets=True%3b </Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="ArticleGenerator.Data.AppDbContext">
+      <Value>Server=db25992.databaseasp.net%3b Database=db25992%3b User Id=db25992%3b Password=6z%3fJ%40Do5Zn4_%3b Encrypt=False%3b MultipleActiveResultSets=True%3b </Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

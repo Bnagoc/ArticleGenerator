@@ -1,13 +1,15 @@
 ﻿using System.Security.Cryptography;
 using System.Text;
 using ClosedXML.Excel;
+using DocumentFormat.OpenXml.Spreadsheet;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ArticleGenerator.Products.Endpoints
 {
     public class UploadProducts : IEndpoint
     {
-        public const string LIST_STRING = "Спецификация";
+        public const string LIST_SPEC_STRING = "Спецификация";
+        public const string LIST_DATA_STRING = "Данные";
         public const string PRODUCT_NUMBER_CELL_STRING = "№";
         public const string PRODUCT_NAME_CELL_STRING = "Наименование товара";
         public const string PRODUCT_ARTICLE_CELL_STRING = "Артикул";
@@ -33,12 +35,17 @@ namespace ArticleGenerator.Products.Endpoints
             {
                 using var workbook = new XLWorkbook(memoryStream);
 
-                int headerRow = 0, productNumberColumn = 0,  productNameColumn = 0, productModelColumn = 1, 
+                int headerRow = 0, productNumberColumn = 0, productNameColumn = 0, productModelColumn = 1,
                     productBrandColumn = 1, productTariffCodeColumn = 1, productArticleColumn = 0;
 
                 // Ищем лист, в имени которого есть "спецификация" (без учёта регистра)
                 var targetWorksheet = workbook.Worksheets
-                    .FirstOrDefault(ws => ws.Name.Contains(LIST_STRING, StringComparison.OrdinalIgnoreCase));
+                    .FirstOrDefault(ws => ws.Name.Contains(LIST_SPEC_STRING, StringComparison.OrdinalIgnoreCase));
+
+                // Ищем лист, в имени которого есть "данные" (без учёта регистра)
+                var dataWorksheet = workbook.Worksheets
+                    .FirstOrDefault(ws => ws.Name.Contains(LIST_DATA_STRING, StringComparison.OrdinalIgnoreCase));
+                dataWorksheet.DataValidations.Worksheet.Columns(3, 13).Clear(XLClearOptions.AllFormats);
 
                 if (targetWorksheet != null)
                 {
@@ -96,6 +103,7 @@ namespace ArticleGenerator.Products.Endpoints
                     targetWorksheet.Column(productNameColumn).InsertColumnsAfter(1);
                     targetWorksheet.Cell(headerRow, productArticleColumn).Value = "Артикул 1С";
 
+
                     // Генерируем артикул, сохраняем продукт в базу, добавляем артикул в таблицу
                     for (int row = headerRow + 1; ; row++)
                     {
@@ -128,7 +136,6 @@ namespace ArticleGenerator.Products.Endpoints
 
                             // Вставляем артикул
                             targetWorksheet.Cell(row, productArticleColumn).Value = product.Article;
-
                             newProducts.Add(product);
                         }
                     }
