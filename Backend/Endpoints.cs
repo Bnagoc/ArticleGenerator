@@ -19,7 +19,7 @@ namespace ArticleGenerator
                 .WithTags("Home");
 
             endpoints.MapPublicGroup()
-                .MapEndpoint<GetForm>();
+                .MapEndpoint<HomePage>();
         }
 
         private static void MapProductsEndpoints(this IEndpointRouteBuilder app)
@@ -30,7 +30,8 @@ namespace ArticleGenerator
             endpoints.MapPublicGroup()
                 .MapEndpoint<UploadProducts>()
                 .MapEndpoint<GetProducts>()
-                .MapEndpoint<DownloadProducts>();
+                .MapEndpoint<DownloadProducts>()
+                .MapEndpoint<UploadProductsWithImages>();
         }
 
         private static RouteGroupBuilder MapPublicGroup(this IEndpointRouteBuilder app, string? prefix = null)

@@ -3,11 +3,20 @@
   "WorkspaceRootPath": "E:\\prod\\ArticleGeneratorApp\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4EE4D5E3-42C7-4890-9C23-B4AACBD45A05}|ArticleGenerator.csproj|e:\\prod\\articlegeneratorapp\\backend\\products\\endpoints\\uploadproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4EE4D5E3-42C7-4890-9C23-B4AACBD45A05}|ArticleGenerator.csproj|solutionrelative:products\\endpoints\\uploadproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4EE4D5E3-42C7-4890-9C23-B4AACBD45A05}|ArticleGenerator.csproj|e:\\prod\\articlegeneratorapp\\backend\\endpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EE4D5E3-42C7-4890-9C23-B4AACBD45A05}|ArticleGenerator.csproj|solutionrelative:endpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/article_generator/True/SqlTable/dbo.Products.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{4EE4D5E3-42C7-4890-9C23-B4AACBD45A05}|ArticleGenerator.csproj|e:\\prod\\articlegeneratorapp\\backend\\configureservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EE4D5E3-42C7-4890-9C23-B4AACBD45A05}|ArticleGenerator.csproj|solutionrelative:configureservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EE4D5E3-42C7-4890-9C23-B4AACBD45A05}|ArticleGenerator.csproj|e:\\prod\\articlegeneratorapp\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EE4D5E3-42C7-4890-9C23-B4AACBD45A05}|ArticleGenerator.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EE4D5E3-42C7-4890-9C23-B4AACBD45A05}|ArticleGenerator.csproj|e:\\prod\\articlegeneratorapp\\backend\\products\\endpoints\\uploadproductswithimages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EE4D5E3-42C7-4890-9C23-B4AACBD45A05}|ArticleGenerator.csproj|solutionrelative:products\\endpoints\\uploadproductswithimages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,24 +35,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "dbo.Products.sql",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/article_generator/True/SqlTable/dbo.Products.sql",
-              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/article_generator/True/SqlTable/dbo.Products.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-09-04T17:19:28.824Z"
+              "Title": "ConfigureServices.cs",
+              "DocumentMoniker": "E:\\prod\\ArticleGeneratorApp\\Backend\\ConfigureServices.cs",
+              "RelativeDocumentMoniker": "ConfigureServices.cs",
+              "ToolTip": "E:\\prod\\ArticleGeneratorApp\\Backend\\ConfigureServices.cs",
+              "RelativeToolTip": "ConfigureServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T13:56:51.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\prod\\ArticleGeneratorApp\\Backend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\prod\\ArticleGeneratorApp\\Backend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T13:56:44.625Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UploadProducts.cs",
-              "DocumentMoniker": "E:\\prod\\ArticleGeneratorApp\\Backend\\Products\\Endpoints\\UploadProducts.cs",
-              "RelativeDocumentMoniker": "Products\\Endpoints\\UploadProducts.cs",
-              "ToolTip": "E:\\prod\\ArticleGeneratorApp\\Backend\\Products\\Endpoints\\UploadProducts.cs",
-              "RelativeToolTip": "Products\\Endpoints\\UploadProducts.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAA5wBwAAAAzAAAAAAAAAA==",
+              "Title": "Endpoints.cs",
+              "DocumentMoniker": "E:\\prod\\ArticleGeneratorApp\\Backend\\Endpoints.cs",
+              "RelativeDocumentMoniker": "Endpoints.cs",
+              "ToolTip": "E:\\prod\\ArticleGeneratorApp\\Backend\\Endpoints.cs",
+              "RelativeToolTip": "Endpoints.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-04T16:57:54.643Z",
+              "WhenOpened": "2025-11-03T18:53:09.305Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UploadProductsWithImages.cs",
+              "DocumentMoniker": "E:\\prod\\ArticleGeneratorApp\\Backend\\Products\\Endpoints\\UploadProductsWithImages.cs",
+              "RelativeDocumentMoniker": "Products\\Endpoints\\UploadProductsWithImages.cs",
+              "ToolTip": "E:\\prod\\ArticleGeneratorApp\\Backend\\Products\\Endpoints\\UploadProductsWithImages.cs",
+              "RelativeToolTip": "Products\\Endpoints\\UploadProductsWithImages.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKMAAABrAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T18:37:56.066Z"
             }
           ]
         }

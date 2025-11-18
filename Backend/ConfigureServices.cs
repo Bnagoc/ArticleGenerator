@@ -6,9 +6,18 @@ namespace ArticleGenerator
     {
         public static void AddServices(this WebApplicationBuilder builder)
         {
+            builder.AddSizeLimit();
             builder.AddSerilog();
             builder.AddDatabase();
             builder.AddCors();
+        }
+
+        private static void AddSizeLimit(this WebApplicationBuilder builder)
+        {
+            builder.WebHost.ConfigureKestrel((context, configuration) =>
+            {
+                configuration.Limits.MaxRequestBodySize = 100_000_000;
+            });
         }
 
         private static void AddSerilog(this WebApplicationBuilder builder)
